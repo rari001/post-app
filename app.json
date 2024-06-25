@@ -1,0 +1,16 @@
+{
+  "name": "post app",
+  "description": "This is postapp",
+  "keywords": [],
+  "website": "",
+  "repository": "https://github.com/cohki0305/blogapp",
+  "env": {},
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "buildpacks": [{
+    "url": "heroku/nodejs"
+  }, {
+    "url": "heroku/ruby"
+  }]
+}

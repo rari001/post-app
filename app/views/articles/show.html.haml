@@ -1,0 +1,41 @@
+.container
+  .article#article-show{data: {article_id: @article.id}}
+    - if @article.eyecatch.attached?
+      .article_image
+        = image_tag @article.eyecatch
+    %h1.article_title= @article.title
+    .article_detail
+      = link_to account_path(@article.user) do
+        = image_tag @article.user.avatar_image
+      %div
+        %p= @article.user.display_name
+        %p= @article.user.display_created_at
+      - if user_signed_in? && current_user.has_written?(@article)
+        .article_detail_actions
+          .dropdown
+            = image_tag 'actions.svg', class: 'dropbtn'
+            .dropdown-content.mini
+              = link_to '編集する', edit_article_path(@article)
+              = link_to '削除する', article_path(@article), data: { turbo_method: 'delete', turbo_confirm: '本当に削除してもよろしいですか？' }
+    .article_content
+      = @article.content
+      - if user_signed_in?
+        .article_heart.active-heart.hidden
+          = image_tag 'heart-active.svg'
+        .article_heart.inactive-heart.hidden
+          = image_tag 'heart.svg'
+  - if user_signed_in?
+    .article
+      %h2 コメント一覧
+      .comments-container
+    
+    .comment-area
+      .btn-secondary.show-comment-button
+        コメントを投稿する
+      .add-comment-area.hidden
+        = text_area_tag :comment_content, '', class: 'sm'
+        .btn-secondary.add-comment-button
+          コメントを投稿する
+
+- content_for :article_js do
+  = javascript_import_module_tag "article"

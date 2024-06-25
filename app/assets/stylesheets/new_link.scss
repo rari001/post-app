@@ -1,0 +1,28 @@
+@import './variables';
+
+.new-link_btn {
+  position: fixed;
+  bottom: 20px;
+  right: 16px;
+  a {
+    display: block;
+  }
+}
+
+.fa {
+    background: $primary-color;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 1.3rem;
+    }
+  }

@@ -1,0 +1,27 @@
+$primary-color: #1D578D;
+$base-bg-color: rgb(241, 245, 247);
+
+$font-lg: 22px;
+
+$text-base-color: #616161;
+
+$layout-width-inner: 1200px;
+
+$breakpoints: (
+//キー : 値
+  'sp': '(max-width: 767px)',
+  'pc':  "(min-width: #{$layout-width-inner})"
+) !default;
+
+//メディアクエリ用のmixinを定義。デフォ値はsp
+@mixin mq($breakpoint: md) {
+//map-get(マップ型変数, キー)で値を取得
+  @media #{map-get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+
+/*===========================================================
+# colors #font
+============================================================*/

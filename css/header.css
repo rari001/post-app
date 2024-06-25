@@ -1,0 +1,47 @@
+/*===========================================================
+# colors #font
+============================================================*/
+.header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1D578D;
+  padding: 16px 16px;
+  font-weight: bold;
+}
+.header_loginBtn {
+  background-color: rgb(241, 245, 247);
+  height: 40px;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 12px 16px;
+  color: #1D578D;
+}
+.header_logos {
+  min-width: 0;
+  display: flex;
+}
+.header_logos img {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin: 12px 8px 0;
+}
+.header_pageTitle {
+  color: white;
+  line-height: 40px;
+  font-size: 22px;
+}
+.header_pageTitle a {
+  color: #fff;
+}
+.header_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,51 @@
+@import 'header';
+@import 'tabs';
+@import 'variables';
+@import 'card';
+@import 'article';
+@import 'new_link';
+@import 'form';
+@import 'common';
+@import 'flash';
+@import 'profile';
+@import 'actiontext.css';
+
+html {
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  background-color: $base-bg-color;
+  font-size: 1em;
+  color: $text-base-color;
+}
+
+.container {
+  max-width: 750px;
+  margin: 108px auto 30px;
+  padding-bottom: 30px;
+  @include mq('sp') {
+    padding: 16px 16px;
+    margin-top: 90px;
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $text-base-color;
+}

@@ -1,0 +1,64 @@
+/*===========================================================
+# colors #font
+============================================================*/
+input.text, select.text {
+  width: 100%;
+  margin: 8px 0px;
+  padding: 16px 8px;
+  border: 1px solid #EBEBEB;
+}
+
+label {
+  font-size: 12px;
+}
+
+textarea, trix-editor {
+  width: 100%;
+  margin: 8px 0px;
+  padding: 8px 8px;
+  min-height: 440px;
+  resize: vertical;
+  border: 1px solid #EBEBEB;
+}
+textarea.sm, trix-editor.sm {
+  min-height: 160px;
+}
+
+.btn-primary {
+  background-color: #1D578D;
+  border: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 16px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: white;
+  border: solid 1px #1D578D;
+  width: 100%;
+  text-align: center;
+  color: #1D578D;
+  padding: 16px 0;
+  font-weight: bold;
+}
+
+.btn-top {
+  margin-top: 20px;
+}
+
+.trix-content {
+  background: #fff;
+}
+
+.form-text {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=form.css.map */

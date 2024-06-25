@@ -1,0 +1,27 @@
+/*===========================================================
+# colors #font
+============================================================*/
+.tabs {
+  display: flex;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  justify-content: space-around;
+}
+.tabs_item {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.tabs_item a {
+  padding: 16px 0px;
+}
+.tabs_item.active {
+  background-color: #1D578D;
+}
+.tabs_item.active a {
+  color: white;
+}
+.tabs_item:hover {
+  opacity: 0.9;
+}
+/*# sourceMappingURL=tabs.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../app/assets/stylesheets/_variables.scss","../app/assets/stylesheets/tabs.scss","tabs.css"],"names":[],"mappings":"AAwBA;;6DAAA;ACtBA;EACE,aAAA;EACA,4CAAA;EACA,6BAAA;ACEF;ADAE;EACE,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,eAAA;ACEJ;ADDI;EACE,iBAAA;ACGN;ADCI;EACE,yBDlBU;AEmBhB;ADAM;EACE,YAAA;ACER;ADEI;EACE,YAAA;ACAN","file":"tabs.css"}
