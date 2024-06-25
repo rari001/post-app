@@ -82,6 +82,7 @@ Rails.application.configure do
     :password       => ENV['MAILGUN_SMTP_PASSWORD'],
     :domain         => ENV['MAILGUN_DOMAIN'],
     :authentication => :plain,
+    config.action_mailer.default_url_options = { host: 'post-app-240687aecec8.herokuapp.com', protocol: 'https' }
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
