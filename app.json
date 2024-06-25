@@ -3,7 +3,7 @@
   "description": "This is postapp",
   "keywords": [],
   "website": "",
-  "repository": "https://github.com/cohki0305/blogapp",
+  "repository": "https://github.com/rari001/post-app",
   "env": {},
   "addons": [
     "heroku-postgresql:hobby-dev"
