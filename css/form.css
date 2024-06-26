@@ -43,6 +43,7 @@ textarea.sm, trix-editor.sm {
   color: #1D578D;
   padding: 16px 0;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .btn-top {
@@ -60,5 +61,9 @@ textarea.sm, trix-editor.sm {
 
 .hidden {
   display: none;
+}
+
+em {
+  font-size: 14px;
 }
 /*# sourceMappingURL=form.css.map */
