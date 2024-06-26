@@ -48,6 +48,7 @@ gem 'sassc'
 gem 'hamlit'
 gem 'active_model_serializers'
 gem 'aws-sdk-s3', require: false
+gem 'gmail'
 
 
 group :development, :test do
